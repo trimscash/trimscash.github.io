@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="icon" type="image/png" href="./favicon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>ピクトグラムメイカー</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	<script src="main.js"></script>
+	<style>
+		p {
+			font-family: 'Noto Sans JP ', sans-serif;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.btn {
+			margin: 4px;
+			font-size: 30px;
+			font-family: 'Noto Sans JP ', sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="text-align: center ;font-family:'Noto Sans JP ',sans-serif;">
+		<header style="max-width:1000px;  margin-left: auto; margin-right: auto;">
+			<div style="border-radius: 10px 10px 0 0;background-color:rgb(70, 163, 250) ;color: white">
+				<a href="./" style="text-decoration: none; color:white;font-weight:bold;font-size: 30px;">ピクトグラムメイカー</a>
+				<p style="margin: 2px;">Pictogram Maker</p>
+			</div>
+			<div style="padding:0px 6px 0px ; background-color:rgb(212, 212, 212);font-size: 20px;">
+				<div style="float:left;"><a href="./index.html">トップ</a></div>
+				<div style="text-align:right;"><a
+						href="https://twitter.com/intent/tweet?text=%E3%83%94%E3%82%AF%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E3%83%A1%E3%82%A4%E3%82%AB%E3%83%BC&url=&hashtags=%E3%83%94%E3%82%AF%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0">共有</a>
+				</div>
+			</div>
+			<hr>
+		</header>
+
+		<main>
+			<div>
+				<canvas id="canvas" width=1200 height=800
+					style="width:100%;max-width: 600px; border: solid 1px #000;box-sizing:boder-box;"></canvas>
+			</div>
+			<hr style="max-width:1000px;margin-top:2px;margin-bottom: 5px;">
+		</main>
+		<div style="max-width:1000px; margin-left: auto; margin-right: auto;">
+			<div style="font-size: 0px;" id="tool">
+				<!-- kokorahen kuso dakedo yurusite -->
+				<!-- <button class="btn" data-mode="0">腰</button>
+				<button class="btn" data-mode="1">膝</button>
+				<button class="btn" data-mode="2">つま先</button> -->
+				<button class="btn" data-mode="1">頭</button>
+				<button class="btn" data-mode="2">腕</button>
+				<button class="btn" data-mode="3">足</button>
+				<!-- <button class="btn" data-mode="5">つなぐ</button> -->
+				<button class="btn" data-mode="4">関節移動</button>
+				<button class="btn" data-mode="5">パーツ移動</button>
+				<button class="btn" data-mode="6">削除</button>
+			</div>
+			<div style=" margin-left: auto; margin-right: auto;max-width:800px;background-color: rgb(212, 212, 212) ;">
+				<p style="text-align: left;font-size:20px;" id="exp">説明：ボタンを押すとここに各ボタンの説明が</p>
+			</div>
+			<hr>
+		</div>
+		<div>
+			<input
+				style="
+			font-family: 'Noto Sans JP ', sans-serif;font-weight:bold;font-size:30px;border-radius:10px; background-color:rgb(70, 163, 250);color: white;"
+				type="button" value="ピクトグラムを画像化" onclick="savePng()">
+			<p>※外枠はつかないのでご安心下せえ</p>
+			<p>※右クリックまたは長押し→保存</p>
+			<div>
+				<img id="gazo" src="" style="width:100%;max-width: 600px; border: solid 1px #000;">
+			</div>
+			<a target="_blank"
+				style="padding:4px;
+			font-family: 'Noto Sans JP ', sans-serif;font-weight:bold;font-size:30px;border-radius:10px; background-color:rgb(70, 163, 250);color: white;"
+				href="https://twitter.com/intent/tweet?text=%E3%83%94%E3%82%AF%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0%E3%83%A1%E3%82%A4%E3%82%AB%E3%83%BC&url=&hashtags=%E3%83%94%E3%82%AF%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0">ツイート</a>
+
+		</div>
+		<div
+			style="border-radius: 10px; margin-top:40px;margin-left: auto; margin-right: auto;max-width:500px; background-color:rgb(212, 212, 212)">
+			<a target="_blank" href="https://twitter.com/uesuginiguseu">うえすぎにぐせう</p>
+		</div>
+	</div>
+</body>
+
+</html>
