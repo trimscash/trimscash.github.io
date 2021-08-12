@@ -49,8 +49,8 @@ $(function () {
 		textarea.value = "";
 		imgdata.forEach(element => {
 			for(let i=0;i<Math.round($("#width").val());i++){
-				for (let j = 1; i < 10; j++) {
-					if (j == element[i]) {
+				for (let j = 1; j < 10; j++) {
+					if (j == element[j-1]) {
 						textarea.value += emoji[j - 1];
 					}
 				}
