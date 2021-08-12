@@ -60,7 +60,7 @@ $(function () {
 		textarea.style.height = clientHeight + "px";
 		let scrollHeight = textarea.scrollHeight;
 		textarea.style.height = scrollHeight + "px";
-		let url = "https://twitter.com/intent/tweet?&text=" + textarea.value + "&hashtags=" + "&url=";
+		let url = "https://twitter.com/intent/tweet?&text=" + textarea.value + "&hashtags=" +"絵かいて絵文字"+ "&url=https://trimscash.github.io/etoemoji/";
 		let encoded = encodeURI(url);
 		$("#tweet").attr("href", encoded);
 
