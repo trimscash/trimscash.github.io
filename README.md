@@ -3,4 +3,5 @@
 
 <h1>https://trimscash.github.io/etoemoji/index.html</h1>
 これは絵文字により絵が描けるやつ
-これも一晩で作ったからコードはごみ．
+これも一晩で作ったからコードはごみ.
+https://trimscash.github.io/etoemoji/midasi.png
