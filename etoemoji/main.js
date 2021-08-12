@@ -48,13 +48,13 @@ $(function () {
 	$("#changebtn").on("click", () => {
 		textarea.value = "";
 		imgdata.forEach(element => {
-			element.forEach(element => {
-				for (let i = 1; i < 10; i++) {
-					if (i == element) {
-						textarea.value += emoji[i - 1];
+			for(let i=0;i<Math.round($("#width").val();i++){
+				for (let j = 1; i < 10; j++) {
+					if (j == element[i]) {
+						textarea.value += emoji[j - 1];
 					}
 				}
-			});
+			}
 			textarea.value += "\n";
 		});
 		textarea.style.height = clientHeight + "px";
