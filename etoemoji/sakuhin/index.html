@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@uesuginiguseu" />
+	<meta property="og:url" content="記事のURL" />
+	<meta property="og:title" content="絵描いて絵文字" />
+	<meta property="og:description" content="絵文字で絵が簡単にかける！！" />
+	<meta property="og:image" content="midasi.png" />
+
+	<meta name="description" content="絵をかいたらそれを絵文字の文字列に変換できる便利なサイトですよ～．簡単に絵文字による絵をかけます">
+
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>絵文字で絵　―絵文字による絵を作成―</title>
+	<script src="main.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=RocknRoll+One&display=swap');
+	</style>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+	<div style="text-align:center; max-width: 1400px;margin-left: auto;margin-right: auto;">
+		<header>
+			<div id="banner">
+				<p id="maintitle"><a style="color:white;" href="./">絵かいて絵文字</a></p>
+				<p id="subtitle">―絵文字による絵を作成―</p>
+			</div>
+			<div id="menu">
+				<ul class="list1">
+					<li><a href="/">トップ</a></li>
+					<li><a href="/sakuhin/">作品</a></li>
+				</ul>
+				<ul class="list2">
+					<li><a href="./">共有</a></li>
+				</ul>
+			</div>
+		</header>
+		<hr style="margin:10px">
+
+		<div id="contents">
+			<ul>
+				<li>
+					<div class="con" id="n1" style="width:calc(13em + 3em);">
+						⬜️⬜️⬜️🟩🟩🟩🟩🟩🟩⬜️⬜️⬜️⬜️
+						⬜️⬜️🟩🟩🟩🟩🟩🟩🟩🟩⬜️⬜️⬜️
+						🟧⬜️🟩🟫🟫🟫🟫🟫🟫🟩⬜️🟧⬜️
+						🟧⬜️🟫🟫🟫🟫🟫🟫🟫🟫⬜️🟧⬜️
+						🟧🟧🟫🟧🟩🟧🟧🟩🟧🟫🟧🟧⬜️
+						🟧🟧🟫🟧🟫🟧🟧🟫🟧🟫🟧🟧⬜️
+						🟫🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟫⬜️
+						🟫🟫🟩🟧🟧🟫🟫🟧🟧🟩🟩🟫⬜️
+						⬜️🟩🟩🟩🟧🟧🟧🟧🟩🟩🟫🟫🟫
+						⬜️🟩🟩🟩🟩🟩🟩🟩🟩🟩🟧🟫🟫
+						⬜️🟫🟩🟩🟫🟫🟫🟩🟩🟧🟧🟧🟫
+						⬜️🟩🟫🟫🟫🟩🟫🟫🟫🟫🟧🟧🟧
+						⬜️🟩🟩🟩🟫🟫🟫🟩🟩🟩🟩🟧⬜️
+						⬜️⬜️🟫🟩🟩🟩🟩🟩🟩🟩⬜️⬜️⬜️
+						⬜️⬜️🟫🟫🟫⬜️⬜️🟫🟫🟫⬜️⬜️⬜️
+						⬜️⬜️🟫🟫🟫⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️
+					</div>
+					<button style="font-size:30px;margin-bottom: 0;height:50px;" class="btn"
+						data-clipboard-target="#n1">📋<br><span>copy</span>
+					</button>
+				</li>
+
+				<li>
+					<div class="con" id="n2" style="width:calc(12em + 3em);">
+						⬛️⬛️⬛️🟨🟨🟨🟨🟨⬛️⬛️⬛️⬛️
+						⬛️🟨🟨🟨🟨🟨🟨🟨🟨🟨⬛️⬛️
+						🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨⬛️
+						🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨⬛️
+						⬛️⬛️🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
+						⬛️⬛️⬛️⬛️⬛️🟨🟨🟨🟨🟨🟨🟨
+						⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟨🟨🟨🟨
+						⬛️⬛️⬛️⬛️⬛️🟨🟨🟨🟨🟨🟨🟨
+						⬛️⬛️🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
+						🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨⬛️
+						🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨⬛️
+						⬛️🟨🟨🟨🟨🟨🟨🟨🟨🟨⬛️⬛️
+						⬛️⬛️⬛️🟨🟨🟨🟨🟨⬛️⬛️⬛️⬛️
+
+					</div>
+					<button style="font-size:30px;margin-bottom: 0;height:50px;" class="btn"
+						data-clipboard-target="#n2">📋<br><span>copy</span>
+					</button>
+
+
+				</li>
+				<li>
+					<div class="con" id="n3" style="width:calc(14em + 3em);">
+						⬛️⬛️⬛️⬛️⬛️🟥🟥🟥🟥⬛️⬛️⬛️⬛️⬛️
+						⬛️⬛️⬛️🟥🟥🟥🟥🟥🟥🟥🟥⬛️⬛️⬛️
+						⬛️⬛️🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥⬛️⬛️
+						⬛️🟥⬜️⬜️🟥🟥🟥🟥⬜️⬜️🟥🟥🟥⬛️
+						⬛️⬜️⬜️⬜️⬜️🟥🟥⬜️⬜️⬜️⬜️🟥🟥⬛️
+						⬛️🟦🟦⬜️⬜️🟥🟥🟦🟦⬜️⬜️🟥🟥⬛️
+						🟥🟦🟦⬜️⬜️🟥🟥🟦🟦⬜️⬜️🟥🟥🟥
+						🟥🟥⬜️⬜️🟥🟥🟥🟥⬜️⬜️🟥🟥🟥🟥
+						🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+						🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+						🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+						🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥
+						🟥🟥🟥🟥⬛️🟥🟥🟥🟥⬛️🟥🟥🟥🟥
+						⬛️🟥🟥⬛️⬛️⬛️🟥🟥⬛️⬛️⬛️🟥🟥⬛️
+
+					</div>
+					<button style="font-size:30px;margin-bottom: 0;height:50px;" class="btn"
+						data-clipboard-target="#n3">📋<br><span>copy</span>
+					</button>
+				</li>
+				<li>
+					<div class="con" id="n4" style="width:calc(16em + 3em);">
+						⬜️⬜️⬜️⬜️⬜️⬛️⬛️⬛️⬛️⬛️⬜️⬜️⬛️⬛️⬛️⬜️
+						⬜️⬜️⬜️⬜️⬛️🟥🟥🟥🟥🟥⬛️⬛️🟧🟧🟧⬛️
+						⬜️⬜️⬜️⬛️🟥🟥🟥🟥🟥🟥🟥🟥⬛️🟧🟧⬛️
+						⬜️⬜️⬜️⬛️⬛️⬛️🟧🟧⬛️🟧⬛️⬛️⬛️🟥⬛️⬜️
+						⬜️⬜️⬛️🟧🟧⬛️⬛️🟧⬛️🟧🟧🟧🟧🟥⬛️⬜️
+						⬜️⬜️⬛️🟧🟧⬛️⬛️🟧🟧⬛️🟧🟧🟧🟥⬛️⬜️
+						⬜️⬜️⬜️⬛️⬛️🟧🟧🟧⬛️⬛️⬛️⬛️⬛️⬛️⬜️⬜️
+						⬜️⬜️⬜️⬜️⬛️⬛️🟧🟧🟧🟧🟧🟧⬛️⬛️⬜️⬜️
+						⬜️⬜️⬛️🟥🟥🟥⬛️🟥🟥🟥⬛️🟥⬛️⬜️⬜️⬜️
+						⬜️⬛️⬛️⬛️🟥🟥🟥⬛️🟥🟥🟥⬛️⬛️⬛️⬛️⬜️
+						⬛️🟧🟧🟧⬛️🟥🟥⬛️🟨⬛️⬛️🟨⬛️🟥🟥⬛️
+						⬛️🟧🟧🟧⬛️🟥⬛️⬛️⬛️⬛️⬛️⬛️🟥🟥🟥⬛️
+						⬜️⬛️🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥🟥⬛️⬜️
+						⬛️🟥🟥🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥🟥⬛️⬜️
+						⬛️🟥🟥⬛️⬛️⬛️⬛️⬛️⬛️⬜️⬜️⬜️⬛️⬛️⬜️⬜️
+						⬜️⬛️⬛️⬜️⬛️⬛️⬛️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️
+
+
+					</div>
+					<button style="font-size:30px;margin-bottom: 0;height:50px;" class="btn"
+						data-clipboard-target="#n4">📋<br><span>copy</span>
+					</button>
+				</li>
+			</ul>
+		</div>
+		<script>
+			new ClipboardJS('.btn')
+		</script>
+		<br>
+
+		<div
+			style="border-radius: 10px; margin-top:40px;margin-left: auto; margin-right: auto;max-width:500px; background-color:rgb(212, 212, 212)">
+			<a target="_blank" href="https://twitter.com/uesuginiguseu">うえすぎにぐせう</p>
+		</div>
+	</div>
+</body>
+
+</html>
+<!--
+			sitemap tukure -->
