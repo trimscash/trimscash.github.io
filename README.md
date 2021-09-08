@@ -14,7 +14,6 @@
 <h1>https://trimscash.github.io/moving_moji/index.html</h1>
 これは十字キーで動く文字のやつ
 
-![スクリーンショット (432)](https://user-images.githubusercontent.com/42578480/132496839-02f344fa-2729-4790-9700-ee188685e026.png)
 
 
 <h1>これから</h1>
