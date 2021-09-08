@@ -10,18 +10,16 @@ $(function () {
 	}
 
 	function no_scroll() {
-		// PCでのスクロール禁止
 		document.addEventListener("mousewheel", scroll_control, {
 			passive: false
 		});
-		// スマホでのタッチ操作でのスクロール禁止
 		document.addEventListener("touchmove", scroll_control, {
 			passive: false
 		});
 	}
 	no_scroll();
 	makeparade();
-	let play = new player("player", "PLAYER", window.innerWidth / 2, 500);
+	let play = new player("player", "🏃‍♀️", window.innerWidth / 2, 500);
 
 	setInterval(function () {
 
@@ -120,28 +118,12 @@ class body {
 
 		this.health = this.size.width / 10;
 
-		// this.mass = this.size.height * this.size.width / (2 * 1000);
-
 		this.speed = {
 			left: 0,
 			right: 0,
 			up: 0,
 			down: 0
 		};
-		// this.accel = {
-		// 	left: 0,
-		// 	right: 0,
-		// 	up: 0,
-		// 	down: 0
-		// };
-		// this.force = {
-		// 	left: 0,
-		// 	right: 0,
-		// 	up: 0,
-		// 	down: 0
-		// };
-		// this.fu = 0.2;
-		// this.friction = this.mass * 9.8 * this.fu;
 		this.obj = {
 			...this.pos,
 			...this.size,
@@ -168,7 +150,7 @@ class body {
 		else kansei[2] -= accel;
 		if (key[3] === true) kansei[3] += accel;
 		else kansei[3] -= accel;
-		//demo maa kore ha kore de koreno meritto ga ar
+		//demo maa iika korede
 
 
 
@@ -206,39 +188,6 @@ class body {
 		this.pos.top -= this.speed.up;
 		this.pos.top += this.speed.down;
 
-		// this.accel = {
-		// 	left: (this.force.left) / this.mass,
-		// 	right: (this.force.right) / this.mass,
-		// 	top: (this.force.up) / this.mass,
-		// 	down: (this.force.down) / this.mass,
-		// };
-		// // (Math.abs(this.speed.speedx) > 0.01 && Math.abs(this.speed.speedx < 0.05))
-		// if (this.speed.speedx != 0) {
-
-		// 	this.accel.x += (-1 * this.friction * ((this.speed.speedx) / (Math.abs(this.speed.speedx)))) / this.mass;
-		// }
-		// // (Math.abs(this.speed.speedy) > 0.01 && Math.abs(this.speed.speedy < 0.05))
-		// if (this.speed.speedy != 0) {
-
-		// 	this.accel.y += (-1 * this.friction * ((this.speed.speedy) / (Math.abs(this.speed.speedy)))) / this.mass;
-		// }
-		// this.speed.speedx += this.accel.x * 0.01;
-		// this.speed.speedy += this.accel.y * 0.01;
-		// this.speed.speedx = Math.round(this.speed.speedx * 100) / 100;
-		// this.speed.speedy = Math.round(this.speed.speedy * 100) / 100;
-		// this.pos.top += this.speed.speedy;
-		// this.pos.left += this.speed.speedx;
-		// // console.log(this.accel, this.speed);
-		// if (this.speed.speedx > 3) {
-		// 	this.speed.speedx = 3;
-		// } else if (this.speed.speedx < -3) {
-		// 	this.speed.speedx = -3;
-		// }
-		// if (this.speed.speedy > 3) {
-		// 	this.speed.speedy = 3;
-		// } else if (this.speed.speedy < -3) {
-		// 	this.speed.speedy = -3;
-		// }
 		console.log(this.speed, key);
 
 		this.$selector.offset({
@@ -278,18 +227,6 @@ class body {
 	}
 }
 
-// function atari(Aobj,Bobj) {
-// 	for (let x = Aobj.x; x < Aobj.weight + Aobj.x; x++) {
-// 		for (let y = Aobj.y; y < Aobj.height + Aobj.y; y++) {
-// 			if(x>=Bobj.x&&x<=Bobj.x+Bobj.weight){
-// 				if (y>=Bobj.y&&y<=Bobj.y+Bobj.height) {
-// 					return 1;
-// 				}
-// 			}
-// 		}
-// 	}
-
-// }
 
 class player extends body {
 	constructor(id, name, posx, posy, textalign = 0) {
@@ -347,40 +284,7 @@ class player extends body {
 		this.pos.top -= this.speed.up;
 		this.pos.top += this.speed.down;
 
-		// this.accel = {
-		// 	left: (this.force.left) / this.mass,
-		// 	right: (this.force.right) / this.mass,
-		// 	top: (this.force.up) / this.mass,
-		// 	down: (this.force.down) / this.mass,
-		// };
-		// // (Math.abs(this.speed.speedx) > 0.01 && Math.abs(this.speed.speedx < 0.05))
-		// if (this.speed.speedx != 0) {
-
-		// 	this.accel.x += (-1 * this.friction * ((this.speed.speedx) / (Math.abs(this.speed.speedx)))) / this.mass;
-		// }
-		// // (Math.abs(this.speed.speedy) > 0.01 && Math.abs(this.speed.speedy < 0.05))
-		// if (this.speed.speedy != 0) {
-
-		// 	this.accel.y += (-1 * this.friction * ((this.speed.speedy) / (Math.abs(this.speed.speedy)))) / this.mass;
-		// }
-		// this.speed.speedx += this.accel.x * 0.01;
-		// this.speed.speedy += this.accel.y * 0.01;
-		// this.speed.speedx = Math.round(this.speed.speedx * 100) / 100;
-		// this.speed.speedy = Math.round(this.speed.speedy * 100) / 100;
-		// this.pos.top += this.speed.speedy;
-		// this.pos.left += this.speed.speedx;
-		// // console.log(this.accel, this.speed);
-		// if (this.speed.speedx > 3) {
-		// 	this.speed.speedx = 3;
-		// } else if (this.speed.speedx < -3) {
-		// 	this.speed.speedx = -3;
-		// }
-		// if (this.speed.speedy > 3) {
-		// 	this.speed.speedy = 3;
-		// } else if (this.speed.speedy < -3) {
-		// 	this.speed.speedy = -3;
-		// }
-		console.log(this.speed, key);
+// 		console.log(this.speed, key);
 
 		this.$selector.offset({
 			top: this.pos.top,
