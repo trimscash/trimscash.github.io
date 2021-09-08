@@ -1,0 +1,9 @@
+.stage {
+	font-size: 25px;
+	list-style: none;
+	/* text-align: center; */
+}
+
+body {
+	overflow: hidden;
+}
