@@ -13,8 +13,8 @@
 
 <h1>https://trimscash.github.io/moving_moji/index.html</h1>
 これは十字キーで動く文字のやつ
+![image](https://user-images.githubusercontent.com/42578480/132497523-4f69ecbe-36a9-46b4-885d-effbc306e117.png)
 
-![image](https://user-images.githubusercontent.com/42578480/132497149-818894ec-3585-4b27-ae86-706a2aba0eb5.png)
 
 
 <h1>これから</h1>
