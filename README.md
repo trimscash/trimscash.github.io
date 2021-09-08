@@ -23,7 +23,9 @@
 ⬛️🟥🟥🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥🟥⬛️⬜️<br>
 ⬛️🟥🟥⬛️⬛️⬛️⬛️⬛️⬛️⬜️⬜️⬜️⬛️⬛️⬜️⬜️<br>
 ⬜️⬛️⬛️⬜️⬛️⬛️⬛️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️<br>
+<br>
 https://trimscash.github.io/etoemoji/sakuhin/index.html
+<br>
 
 ![midasi](https://user-images.githubusercontent.com/42578480/129273943-db060d2f-9a4f-4828-af4f-989623c27e2d.png)
 
