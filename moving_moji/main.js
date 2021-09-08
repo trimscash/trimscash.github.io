@@ -19,7 +19,7 @@ $(function () {
 	}
 	no_scroll();
 	makeparade();
-	let play = new player("player", "🏃‍♀️", window.innerWidth / 2, 500);
+	let play = new body("player", "🏃‍♀️", window.innerWidth / 2, 500);
 
 	setInterval(function () {
 
@@ -224,72 +224,5 @@ class body {
 			height: 500
 		}));
 		return c;
-	}
-}
-
-
-class player extends body {
-	constructor(id, name, posx, posy, textalign = 0) {
-		super(id, name, posx, posy, textalign);
-	}
-
-	move(key) {
-
-		let kansei = [0, 0, 0, 0];
-		let accel = 0.3;
-		//for de yareyo of the year!!
-		if (key[0] === true) kansei[0] += accel;
-		else kansei[0] -= accel;
-		if (key[1] === true) kansei[1] += accel;
-		else kansei[1] -= accel;
-		if (key[2] === true) kansei[2] += accel;
-		else kansei[2] -= accel;
-		if (key[3] === true) kansei[3] += accel;
-		else kansei[3] -= accel;
-		//demo maa kore ha kore de koreno meritto ga ar
-
-
-
-		this.speed.left += kansei[0];
-		this.speed.right += kansei[1];
-		this.speed.up += kansei[2];
-		this.speed.down += kansei[3];
-		if (this.speed.left < 0) {
-			this.speed.left = 0;
-		}
-		if (this.speed.right < 0) {
-			this.speed.right = 0;
-		}
-		if (this.speed.up < 0) {
-			this.speed.up = 0;
-		}
-		if (this.speed.down < 0) {
-			this.speed.down = 0;
-		}
-		let max = 4;
-		if (this.speed.left > max) {
-			this.speed.left = max;
-		}
-		if (this.speed.right > max) {
-			this.speed.right = max;
-		}
-		if (this.speed.up > max) {
-			this.speed.up = max;
-		}
-		if (this.speed.down > max) {
-			this.speed.down = max;
-		}
-		this.pos.left -= this.speed.left;
-		this.pos.left += this.speed.right;
-		this.pos.top -= this.speed.up;
-		this.pos.top += this.speed.down;
-
-// 		console.log(this.speed, key);
-
-		this.$selector.offset({
-			top: this.pos.top,
-			left: this.pos.left
-		});
-		// console.log(this.obj);ss
 	}
 }
