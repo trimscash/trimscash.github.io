@@ -140,7 +140,7 @@ class body {
 	move(key) {
 
 		let kansei = [0, 0, 0, 0];
-		let accel = 0.3;
+		let accel = 0.1;
 		//for de yareyo of the year!!
 		if (key[0] === true) kansei[0] += accel;
 		else kansei[0] -= accel;
@@ -188,7 +188,7 @@ class body {
 		this.pos.top -= this.speed.up;
 		this.pos.top += this.speed.down;
 
-		console.log(this.speed, key);
+// 		console.log(this.speed, key);
 
 		this.$selector.offset({
 			top: this.pos.top,
