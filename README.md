@@ -1,6 +1,6 @@
 PICTOGRAM MAKER
 <h1>https://trimscash.github.io/</h1>
-this is the site that can make easy to make pictogram...👸👸👸👸
+this is the site that can easy to make pictogram...👸👸👸👸
 
 ピクトグラムを作ることができるサイト思い付きで一晩で作ったからコードはごみ．
 <img src="https://github.com/trimscash/trimscash.github.io/blob/main/midasi.png?raw=true" width="350px">
